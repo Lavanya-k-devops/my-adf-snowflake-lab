@@ -1,0 +1,9 @@
+{
+	"name": "adf-watchguard-lab-01",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8d5dd0b0-f290-4d1f-ab6c-7ac309b32ce7",
+		"tenantId": "8ca1710d-6e15-4141-835a-d2befe397491"
+	}
+}
