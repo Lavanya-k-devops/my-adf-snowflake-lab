@@ -6,12 +6,12 @@
 		"type": "SnowflakeV2",
 		"typeProperties": {
 			"authenticationType": "Basic",
-			"accountIdentifier": "KNB26294",
+			"accountIdentifier": "LAZJGVP-KNB26294",
 			"user": "LAVANYA",
 			"database": "POC_DB",
 			"warehouse": "POC_WH;",
 			"useUtcTimestamps": false,
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDc4NDVDRjU0LUMyRTEtNDY0QS05NEQyLTUwNzk2NDJGMjMxMl9lYzIyMGE5Mi05MDFjLTQ1MGQtYTM5Ny03NTU4YzhhYTY2YmUiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDc4NDVDRjU0LUMyRTEtNDY0QS05NEQyLTUwNzk2NDJGMjMxMl84YjMxNDZjNi04N2EyLTRlMmMtYTExMy1iZjZmZTMzNmU3YzciDQp9"
 		},
 		"version": "1.1"
 	}
