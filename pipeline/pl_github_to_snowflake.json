@@ -3,7 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "my_first_activity",
+				"description": "testing with new git branch",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
