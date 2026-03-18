@@ -156,8 +156,8 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "my_first_activity",
-						"description": "testing with new git branch",
+						"name": "My_first_activity",
+						"description": "Publish VS Trigger test",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
