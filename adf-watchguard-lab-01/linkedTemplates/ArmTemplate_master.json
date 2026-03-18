@@ -1,0 +1,98 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "adf-watchguard-lab-01"
+		},
+		"GITHUB_using_httplink_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'GITHUB_using_httplink'"
+		},
+		"ls_snowflake_poc_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_snowflake_poc'"
+		},
+		"GITHUB_using_httplink_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Lavanya-k-devops/my-adf-snowflake-lab/refs/heads/main/sample_data.csv"
+		},
+		"GITHUB_using_httplink_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Lavanya-k-devops"
+		},
+		"ls_snowflake_poc_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "POC_DB"
+		},
+		"ls_snowflake_poc_properties_typeProperties_role": {
+			"type": "string",
+			"defaultValue": "SYSADMIN"
+		},
+		"ls_snowflake_poc_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "LAZJGVP-KNB26294.snowflakecomputing.com"
+		},
+		"storageaccount_sasUri": {
+			"type": "secureString",
+			"metadata": "Secure string for 'sasUri' of 'storageaccount'"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "adf-watchguard-lab-01_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"GITHUB_using_httplink_password": {
+						"value": "[parameters('GITHUB_using_httplink_password')]"
+					},
+					"ls_snowflake_poc_password": {
+						"value": "[parameters('ls_snowflake_poc_password')]"
+					},
+					"GITHUB_using_httplink_properties_typeProperties_url": {
+						"value": "[parameters('GITHUB_using_httplink_properties_typeProperties_url')]"
+					},
+					"GITHUB_using_httplink_properties_typeProperties_userName": {
+						"value": "[parameters('GITHUB_using_httplink_properties_typeProperties_userName')]"
+					},
+					"ls_snowflake_poc_properties_typeProperties_database": {
+						"value": "[parameters('ls_snowflake_poc_properties_typeProperties_database')]"
+					},
+					"ls_snowflake_poc_properties_typeProperties_role": {
+						"value": "[parameters('ls_snowflake_poc_properties_typeProperties_role')]"
+					},
+					"ls_snowflake_poc_properties_typeProperties_host": {
+						"value": "[parameters('ls_snowflake_poc_properties_typeProperties_host')]"
+					},
+					"storageaccount_sasUri": {
+						"value": "[parameters('storageaccount_sasUri')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

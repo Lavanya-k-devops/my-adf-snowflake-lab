@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-watchguard-lab-01"
+		},
+		"GITHUB_using_httplink_password": {
+			"value": ""
+		},
+		"ls_snowflake_poc_password": {
+			"value": ""
+		},
+		"GITHUB_using_httplink_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Lavanya-k-devops/my-adf-snowflake-lab/refs/heads/main/sample_data.csv"
+		},
+		"GITHUB_using_httplink_properties_typeProperties_userName": {
+			"value": "Lavanya-k-devops"
+		},
+		"ls_snowflake_poc_properties_typeProperties_database": {
+			"value": "POC_DB"
+		},
+		"ls_snowflake_poc_properties_typeProperties_role": {
+			"value": "SYSADMIN"
+		},
+		"ls_snowflake_poc_properties_typeProperties_host": {
+			"value": "LAZJGVP-KNB26294.snowflakecomputing.com"
+		},
+		"storageaccount_sasUri": {
+			"value": ""
+		}
+	}
+}
