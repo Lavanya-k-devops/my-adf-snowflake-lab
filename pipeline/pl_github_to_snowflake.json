@@ -31,7 +31,49 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "storageaccount",
+							"type": "LinkedServiceReference"
+						},
+						"path": "staging"
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "EMP_ID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "EMP_ID",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "EMP_NAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "EMP_NAME",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "CITY",
+									"type": "String"
+								},
+								"sink": {
+									"name": "CITY",
+									"type": "String"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
