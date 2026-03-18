@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "POC_SCHEMA",
-			"table": "Sample_data"
+			"table": "GITHUB_DATA"
 		}
 	}
 }
