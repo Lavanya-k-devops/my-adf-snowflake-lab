@@ -5,11 +5,11 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/Lavanya-k-devops/my-adf-snowflake-lab/blob/main/sample_data.csv",
+			"url": "https://raw.githubusercontent.com/Lavanya-k-devops/my-adf-snowflake-lab/refs/heads/main/sample_data.csv",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Basic",
 			"userName": "Lavanya-k-devops",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDc4NDVDRjU0LUMyRTEtNDY0QS05NEQyLTUwNzk2NDJGMjMxMl80YTBiZTNlYS01NTA0LTRlMzMtOTA2OS0zZTRmMjVkMzYzZDAiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDc4NDVDRjU0LUMyRTEtNDY0QS05NEQyLTUwNzk2NDJGMjMxMl9mZjU0NWM1Mi0zMDNlLTRjZDQtYTgyNy00ZDk3MjQ3MWYyMGUiDQp9"
 		}
 	}
 }
