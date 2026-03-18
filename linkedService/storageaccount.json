@@ -1,0 +1,11 @@
+{
+	"name": "storageaccount",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://stwatchguardpoc.blob.core.windows.net/staging",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
