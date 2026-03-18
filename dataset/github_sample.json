@@ -1,0 +1,21 @@
+{
+	"name": "github_sample",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GITHUB_using_httplink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
